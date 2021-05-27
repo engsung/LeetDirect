@@ -1,0 +1,15 @@
+{
+    "name": "TabManager",
+    "description": "Manage your tabs!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "TabManagerIcon.png",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": ["storage", "activeTab", "scripting"]
+}
