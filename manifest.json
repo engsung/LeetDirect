@@ -1,15 +1,16 @@
 {
-    "name": "TabManager",
-    "description": "Manage your tabs!",
+    "name": "LeetDirect",
+    "description": "No more procrastination!",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"]
     },
-    "action": {
-        "default_icon": "TabManagerIcon.png",
-        "default_popup": "popup.html"
-    },
-    "options_page": "options.html",
-    "permissions": ["storage", "activeTab", "scripting"]
+    "permissions": [
+        "storage", 
+        "activeTab", 
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ]
 }
