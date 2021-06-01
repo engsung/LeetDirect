@@ -6,6 +6,12 @@
     "background": {
         "scripts": ["background.js"]
     },
+    "content_scripts": [
+        {
+        "matches": ["*://*.leetcode.com/problems/*"],
+        "js": ["content.js"]
+        }
+    ],
     "web_accessible_resources": [
         "questions/questions.json"
     ],

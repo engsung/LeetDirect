@@ -1,5 +1,9 @@
 let questions = {};
+let targetUrl = '';
 
+/*
+On install, load the leetcode urls intro questions
+ */
 chrome.runtime.onInstalled.addListener(function (details) {
   fetch(chrome.extension.getURL('./questions/questions.json'))
     .then((resp) => resp.json())
@@ -11,7 +15,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) { 
     // redirect
-    const targetUrl = details.url;
+    targetUrl = details.url;
     let leetcode = "https://leetcode.com/problems/two-sum";
     if (targetUrl.includes("facebook.com")){
       leetcode = questions.hard[Math.floor(Math.random() * questions.hard.length)];
