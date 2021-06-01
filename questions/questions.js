@@ -1,4 +1,4 @@
-{
+const questions = {
     "easy": [
         "https://leetcode.com/problems/two-sum",
         "https://leetcode.com/problems/reverse-integer",
@@ -83,4 +83,6 @@
         "https://leetcode.com/problems/word-ladder-ii",
         "https://leetcode.com/problems/word-ladder"
     ]
-}
+};
+
+module.exports = questions;
