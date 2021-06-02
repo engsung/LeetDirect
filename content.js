@@ -1,3 +1,7 @@
+/*
+Method: changeDifficulty
+Description: always change the difficulty level to easy ;)
+*/
 const changeDifficulty = () => {
     setTimeout(() => {
       const node = document.querySelector('.css-t42afm') || document.querySelector('.css-dcmtd5') || document.querySelector('.css-14oi08n') ;
