@@ -1,6 +1,6 @@
-const changeDiff = () => {
+const changeDifficulty = () => {
     setTimeout(() => {
-      const node = document.querySelector('.css-t42afm');
+      const node = document.querySelector('.css-t42afm') || document.querySelector('.css-dcmtd5') || document.querySelector('.css-14oi08n') ;
       if (!node) {
           return
       } else {
@@ -11,4 +11,4 @@ const changeDiff = () => {
     }, 100);
   };
 
-  window.addEventListener('load', changeDiff);
+window.addEventListener('load', changeDifficulty);
